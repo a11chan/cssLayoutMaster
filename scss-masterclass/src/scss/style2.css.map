@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,uGAAI;AAWZ,AGXA,MHWM,CGXE;EACN,OAAO,EAAC,YAAY;EACpB,WAAW,EAAE,OAAO;EACpB,aAAa,EAAE,GAAG;EAClB,SAAS,EAAC,IAAI;EACd,cAAc,EAAE,SAAS;EACzB,OAAO,EAAC,QAAQ;EAChB,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAC,KAAK;EACX,WAAW,EAAC,GAAG;CAChB;;AHLD,AAAA,CAAC,CAAC;EEJA,KAAK,EAAC,IAAI;EFMR,eAAe,EAAE,IAAI;CAExB;;AAED,AAAA,MAAM,CAAC;EAEL,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "style2.scss",
+        "_variables.scss",
+        "_mixins.scss",
+        "_buttons.scss"
+    ],
+    "names": [],
+    "file": "style2.css"
+}
