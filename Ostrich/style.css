@@ -1,0 +1,75 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  background-color:#DDE1D4;
+  padding:15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin:0 auto;
+}
+
+.grid {
+  display:grid;
+  grid-template:
+  "the1quadrant the1quadrant the2quadrant the2quadrant" 1fr
+  "the1quadrant the1quadrant the2quadrant the2quadrant" 1fr
+  "the3quadrant the3quadrant the4-1quadrant the4-2quadrant" 1fr
+  "the3quadrant the3quadrant the4-3quadrant the4-4quadrant" 1fr
+  / 1fr 1fr 1fr 1fr;
+  height:50vh
+}
+
+.grid > div {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.the1quadrant {
+  grid-area:the1quadrant;
+  font-size:40px;
+  font-weight: bold;
+  color:#F44607;
+  background:#DAE7DE;
+}
+.the2quadrant {
+  grid-area:the2quadrant;
+  font-size:40px;
+  font-weight: bold;
+  color:#eee;
+  background:#008a69;
+}
+.the3quadrant {
+  grid-area:the3quadrant;
+  font-size:40px;
+  font-weight: bold;
+  color:#eee;
+  background:#F44607;
+}
+
+.grid > div:nth-child(n+4) {
+  font-size:25px;
+  font-weight: bold;
+}
+
+.the4-1quadrant {
+  grid-area:the4-1quadrant;
+  color:#F44607;
+  background:#f7abc5;
+}
+.the4-2quadrant {
+  grid-area:the4-2quadrant;
+  color:#eee;
+  background:#5f5fa9;
+}
+.the4-3quadrant {
+  grid-area:the4-3quadrant;
+  color:#F44607;
+  background:#ffc128;
+}
+.the4-4quadrant {
+  grid-area:the4-4quadrant;
+  color:#eee;
+  background:#f97374;
+}

@@ -1,0 +1,75 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  background-color:#DDE1D4;
+  padding:15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  max-width: 650px;
+  width: 100%;
+  height: 100vh;
+  margin:0 auto;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 107px 428px 364px;
+  grid-template-areas:
+  "header header header"
+  "bad bad bad-next"
+  "religion religion religion";
+  gap:20px;
+}
+
+.header {
+  grid-area:header;
+  display:flex;
+  align-items: flex-end;
+  padding:15px;
+  color:white;
+  background-color: black;
+}
+.header article {
+  display:flex;
+}
+.header article ul:last-child {
+  margin-left:25px;
+}
+.header > ul {
+  margin-left:129px;
+}
+.bad {
+  grid-area: bad;
+  display:flex;
+  align-items: flex-end;
+  color:black;
+  background-color: #f14011;
+}
+.bad h1 {
+  font-size:190px;
+  font-weight: bold;
+  margin-left:5px;
+}
+
+.bad-next {
+  grid-area: bad-next;
+  background-color: #f14011;
+}
+
+.religion {
+  grid-area: religion;
+  display:flex;
+  flex-direction: column;
+  background-color: #f14011;
+}
+.religion h1 {
+  margin: -15px 0 60px 5px;
+  font-size: 176.7px;
+  font-weight: bold;
+}
+.religion ul {
+  margin-left:20px;
+  font-size:30px;
+  font-weight: bold;
+  color:#dae5d7;
+}

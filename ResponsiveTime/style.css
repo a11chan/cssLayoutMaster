@@ -1,0 +1,81 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+.grid {
+  height:100%;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(30vh,1fr));
+  grid-template-rows: minmax(100px,15vw);
+  grid-auto-rows: minmax(40vh, 1fr);
+}
+header {
+  grid-column:1 / -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  font-size: max(2.5em,5.25vw);
+  font-weight:bold;
+}
+
+.grid__textinfo {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding:30px;
+}
+.grid__textinfo__title {
+  text-align:center;
+  font-size:1.5em;
+}
+.grid__textinfo__author {
+  font-size:.83em;
+}
+
+.grid article:nth-of-type(1) {
+  background:#bfbda7;
+}
+.grid article:nth-of-type(2) {
+  background: no-repeat center url('https://www.ayearofconsciouspractice.com/content/1-texts/3-yelena-popova/1-cosima-von-bonin.jpg');
+  background-size: cover;
+}
+.grid article:nth-of-type(3) {
+  background:#fe4814;
+}
+.grid article:nth-of-type(4) {
+  background: no-repeat center url('https://www.ayearofconsciouspractice.com/content/1-texts/5-test-image/1-fields.jpg');
+  background-size: cover;
+}
+.grid article:nth-of-type(5) {
+  background:#847e96;
+}
+.grid article:nth-of-type(6) {
+  background:#d0ff71;
+}
+.grid article:nth-of-type(7) {
+  background:#993333;
+}
+.grid article:nth-of-type(8) {
+  background:#3aaafa;
+}
+.grid article:nth-of-type(9) {
+  background: no-repeat center url('https://www.ayearofconsciouspractice.com/content/1-texts/10-image-balamohan/balamohan-single-image.jpg');
+  background-size: cover;
+}
+.grid article:nth-of-type(10) {
+  background:#41907a;
+}
+.grid article:nth-of-type(11) {
+  background: no-repeat center url('https://www.ayearofconsciouspractice.com/content/1-texts/12-fields/1.starlings-by-oronbb.jpg');
+  background-size: cover;
+}
+.grid article:nth-of-type(12) {
+  background:#e3c4e5;
+}
