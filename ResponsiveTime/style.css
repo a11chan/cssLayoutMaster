@@ -79,3 +79,10 @@ header h1 {
 .grid article:nth-of-type(12) {
   background:#e3c4e5;
 }
+.grid article {
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+.grid article:hover {
+  border-radius: 60%;
+}
