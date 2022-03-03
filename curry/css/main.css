@@ -1,12 +1,6 @@
-
 main {
   grid-column: 2 / 3;
   grid-row: 2 / 4;
-}
-.main__slide-box-top,
-.main__slide-box-bottom {
-  width:100%;
-  height:50%;
 }
 .main__logo-container {
   display: flex;
@@ -21,16 +15,47 @@ main {
   padding:0 59px 0 58px;
 }
 .main__logo-container .main__logo {
-  width:430px;
+  width:50vw;
+  max-width:430px;
   margin:0 auto;
 }
-.main__slide-box-top {
-  background: no-repeat center url("https://curry.cafe/wp-content/uploads/2018/11/leader-16.jpg");
-  background-size:cover;
-  z-index:-1;
+
+@media screen and (min-width:751px) {
+  main {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-start:2;
+    grid-row:2 / -2;
+  }
+  .main__slide-box-left--hd,
+  .main__slide-box-right--hd {
+    background-size:cover;
+    z-index:-1;
+  }
+  .main__slide-box-left--hd {
+    background: no-repeat center url("https://curry.cafe/wp-content/uploads/2018/11/leader-16.jpg");
+  }
+  .main__slide-box-right--hd {
+    background: no-repeat center url("https://curry.cafe/wp-content/uploads/2018/11/leader-22.jpg");
+  }
 }
-.main__slide-box-bottom {
-  background: no-repeat center url("https://curry.cafe/wp-content/uploads/2018/11/leader-22.jpg");
-  background-size: cover;
-  z-index:-1;
+
+@media screen and (max-width:750px) {
+  .main__slide-box-top,
+  .main__slide-box-bottom {
+    width:100%;
+    height:50%;
+  }
+  .main__slide-box-top,
+  .main__slide-box-bottom {
+    background-size:cover;
+    z-index:-1;
+  }
+  .main__slide-box-top {
+    background: no-repeat center url("https://curry.cafe/wp-content/uploads/2018/11/leader-16.jpg");
+
+  }
+  .main__slide-box-bottom {
+    background: no-repeat center url("https://curry.cafe/wp-content/uploads/2018/11/leader-22.jpg");
+  }
 }
