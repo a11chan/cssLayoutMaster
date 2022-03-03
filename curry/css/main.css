@@ -1,0 +1,31 @@
+
+main {
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+}
+.main__slide-box-top,
+.main__slide-box-bottom {
+  width:100%;
+  height:50%;
+}
+.main__logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  padding:0 66px;
+}
+.main__slide-box-top {
+  background: no-repeat center url("https://curry.cafe/wp-content/uploads/2018/11/leader-16.jpg");
+  background-size:cover;
+  z-index:-1;
+}
+.main__slide-box-bottom {
+  background: no-repeat center url("https://curry.cafe/wp-content/uploads/2018/11/leader-22.jpg");
+  background-size: cover;
+  z-index:-1;
+}

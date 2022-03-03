@@ -11,13 +11,15 @@ body {
 
 .grid {
   display:grid;
-  grid-template:
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  height:50vh
+  /* grid-template:
   "the1quadrant the1quadrant the2quadrant the2quadrant" 1fr
   "the1quadrant the1quadrant the2quadrant the2quadrant" 1fr
   "the3quadrant the3quadrant the4-1quadrant the4-2quadrant" 1fr
   "the3quadrant the3quadrant the4-3quadrant the4-4quadrant" 1fr
-  / 1fr 1fr 1fr 1fr;
-  height:50vh
+  / 1fr 1fr 1fr 1fr; */
 }
 
 .grid > div {
@@ -26,22 +28,26 @@ body {
   align-items: center;
 }
 
+.the1quadrant,
+.the2quadrant,
+.the3quadrant {
+  grid-column:span 2;
+  grid-row:span 2;
+}
+
 .the1quadrant {
-  grid-area:the1quadrant;
   font-size:40px;
   font-weight: bold;
   color:#F44607;
   background:#DAE7DE;
 }
 .the2quadrant {
-  grid-area:the2quadrant;
   font-size:40px;
   font-weight: bold;
   color:#eee;
   background:#008a69;
 }
 .the3quadrant {
-  grid-area:the3quadrant;
   font-size:40px;
   font-weight: bold;
   color:#eee;
@@ -54,22 +60,18 @@ body {
 }
 
 .the4-1quadrant {
-  grid-area:the4-1quadrant;
   color:#F44607;
   background:#f7abc5;
 }
 .the4-2quadrant {
-  grid-area:the4-2quadrant;
   color:#eee;
   background:#5f5fa9;
 }
 .the4-3quadrant {
-  grid-area:the4-3quadrant;
   color:#F44607;
   background:#ffc128;
 }
 .the4-4quadrant {
-  grid-area:the4-4quadrant;
   color:#eee;
   background:#f97374;
 }
