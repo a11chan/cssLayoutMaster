@@ -1,12 +1,220 @@
 <!DOCTYPE html>
 <html lang="ko-kr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <!-- https://elamartists.ac.nz Clone Coding-->
-  </head>
-  <body>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Art Gallery</title>
+  <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+  <!-- https://elamartists.ac.nz Clone Coding-->
+</head>
+
+<body>
+  <header class="grid-header">
+    <form class="grid-header__form">
+      <select class="year" name="year" id="year">
+        <option>Year: All</option>
+        <option value="all">All</option>
+        <option value="2022">2022</option>
+        <option value="2021">2021</option>
+        <option value="2020">2020</option>
+      </select>
+      <select name="program" id="program">
+        <option>Programme: All</option>
+        <option value="all">All</option>
+        <option value="BFA">BFA</option>
+        <option value="BFA-hons">BFA(Hons)</option>
+      </select>
+      <select name="theme" id="theme">
+        <option>Themes: All</option>
+        <option value="all">All</option>
+        <option value="Abstraction">Abstraction</option>
+        <option value="Affect">Affect</option>
+      </select>
+      <select name="practice" id="practice">
+        <option>Practice: All</option>
+        <option value="all">All</option>
+        <option value="artists-book">Artist's Book</option>
+        <option value="ceramics">Ceramics</option>
+      </select>
+      <select name="student" id="student">
+        <option>Students</option>
+        <option value="Alyssa">Alyssa-Llorando</option>
+        <option value="Amber">Amber Brocklebank</option>
+        <option value="Annie">Annie Marshall</option>
+      </select>
+    </form>
+  </header>
+
+  <main class="grid-main">
+
+    <article class="grid-main__item-wrap">
+      <header class="item-wrap-header">
+        <h3>Jasmine Tuia</h3>
+        <span>PGDIPFA</span>
+      </header>
+      <div class="item-wrap-main">
+        <div class="item-wrap-main__img-wrap">
+          <img src="https://elamartists.ac.nz/media/project-images/_promoLandscapeSmall/016A4694.JPG" alt="item-image">
+        </div>
+      </div>
+      <footer class="item-wrap-footer">
+        <a href="#">View work</a>
+        <span>2020</span>
+      </footer>
+    </article>
+    
+    <article class="grid-main__item-wrap">
+      <header class="item-wrap-header">
+        <h3>Gabi Lardies</h3>
+        <span>MFA</span>
+      </header>
+      <div class="item-wrap-main">
+        <div class="item-wrap-main__img-wrap">
+          <img src="https://elamartists.ac.nz/media/project-images/_promoLandscape/027A7598_191127_080632.jpg" alt="item-image">
+        </div>
+      </div>
+      <footer class="item-wrap-footer">
+        <a href="#">View work</a>
+        <span>2019</span>
+      </footer>
+    </article>
+
+    <article class="grid-main__item-wrap">
+      <header class="item-wrap-header">
+        <h3>Jennifer Partington</h3>
+        <span>BFA(Hons)</span>
+      </header>
+      <div class="item-wrap-main">
+        <div class="item-wrap-main__img-wrap">
+          <img src="https://elamartists.ac.nz/media/project-images/2020/Jennifer-Partington/_promoLandscape/JenniferPartington03.jpg" alt="item-image">
+        </div>
+      </div>
+      <footer class="item-wrap-footer">
+        <a href="#">View work</a>
+        <span>2020</span>
+      </footer>
+    </article>
+
+    <article class="grid-main__item-wrap">
+      <header class="item-wrap-header">
+        <h3>Sarah Meynell</h3>
+        <span>BFA(Hons)</span>
+      </header>
+      <div class="item-wrap-main">
+        <div class="item-wrap-main__img-wrap">
+          <img src="https://elamartists.ac.nz/media/project-images/_promoPortrait/sarahm_1.jpg" alt="item-image">
+        </div>
+        <div class="item-wrap-main__img-wrap">
+          <img src="https://elamartists.ac.nz/media/project-images/_promoPortrait/sarahm_2.jpg" alt="item-image">
+        </div>
+      </div>
+      <footer class="item-wrap-footer">
+        <a href="#">View work</a>
+        <span>2020</span>
+      </footer>
+    </article>
+
+    <article class="grid-main__item-wrap">
+      <header class="item-wrap-header">
+        <h3>Kayleigh Williams</h3>
+        <span>BFA(Hons)</span>
+      </header>
+      <div class="item-wrap-main">
+        <div class="item-wrap-main__img-wrap">
+          <img src="https://elamartists.ac.nz/media/project-images/2018/Kayleigh-Williams/_promoPortrait/43A1009web.jpg" alt="item-image">
+        </div>
+      </div>
+      <footer class="item-wrap-footer">
+        <a href="#">View work</a>
+        <span>2020</span>
+      </footer>
+    </article>
+
+    <article class="grid-main__item-wrap">
+      <header class="item-wrap-header">
+        <h3>Jasmine Tuia</h3>
+        <span>PGDIPFA</span>
+      </header>
+      <div class="item-wrap-main">
+        <div class="item-wrap-main__img-wrap">
+          <img src="https://elamartists.ac.nz/media/project-images/_promoLandscapeSmall/016A4694.JPG" alt="item-image">
+        </div>
+      </div>
+      <footer class="item-wrap-footer">
+        <a href="#">View work</a>
+        <span>2020</span>
+      </footer>
+    </article>
+    
+    <article class="grid-main__item-wrap">
+      <header class="item-wrap-header">
+        <h3>Gabi Lardies</h3>
+        <span>MFA</span>
+      </header>
+      <div class="item-wrap-main">
+        <div class="item-wrap-main__img-wrap">
+          <img src="https://elamartists.ac.nz/media/project-images/_promoLandscape/027A7598_191127_080632.jpg" alt="item-image">
+        </div>
+      </div>
+      <footer class="item-wrap-footer">
+        <a href="#">View work</a>
+        <span>2019</span>
+      </footer>
+    </article>
+
+    <article class="grid-main__item-wrap">
+      <header class="item-wrap-header">
+        <h3>Jennifer Partington</h3>
+        <span>BFA(Hons)</span>
+      </header>
+      <div class="item-wrap-main">
+        <div class="item-wrap-main__img-wrap">
+          <img src="https://elamartists.ac.nz/media/project-images/2020/Jennifer-Partington/_promoLandscape/JenniferPartington03.jpg" alt="item-image">
+        </div>
+      </div>
+      <footer class="item-wrap-footer">
+        <a href="#">View work</a>
+        <span>2020</span>
+      </footer>
+    </article>
+
+    <article class="grid-main__item-wrap">
+      <header class="item-wrap-header">
+        <h3>Sarah Meynell</h3>
+        <span>BFA(Hons)</span>
+      </header>
+      <div class="item-wrap-main">
+        <div class="item-wrap-main__img-wrap">
+          <img src="https://elamartists.ac.nz/media/project-images/_promoPortrait/sarahm_1.jpg" alt="item-image">
+        </div>
+        <div class="item-wrap-main__img-wrap">
+          <img src="https://elamartists.ac.nz/media/project-images/_promoPortrait/sarahm_2.jpg" alt="item-image">
+        </div>
+      </div>
+      <footer class="item-wrap-footer">
+        <a href="#">View work</a>
+        <span>2020</span>
+      </footer>
+    </article>
+
+    <article class="grid-main__item-wrap">
+      <header class="item-wrap-header">
+        <h3>Kayleigh Williams</h3>
+        <span>BFA(Hons)</span>
+      </header>
+      <div class="item-wrap-main">
+        <div class="item-wrap-main__img-wrap">
+          <img src="https://elamartists.ac.nz/media/project-images/2018/Kayleigh-Williams/_promoPortrait/43A1009web.jpg" alt="item-image">
+        </div>
+      </div>
+      <footer class="item-wrap-footer">
+        <a href="#">View work</a>
+        <span>2020</span>
+      </footer>
+    </article>
+
+  </main>
+</body>
+
 </html>
