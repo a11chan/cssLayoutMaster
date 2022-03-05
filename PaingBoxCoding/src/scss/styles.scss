@@ -148,6 +148,8 @@ header {
 .blog {
   display:grid;
   grid-template-columns: 1fr;
+  grid-template-rows: repeat(3,auto);
+  // auto == max-content
   margin-bottom: 80px;
   width:100%;
   .blog__post {

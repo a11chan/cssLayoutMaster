@@ -254,6 +254,8 @@ header nav ul:first-child li {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
   margin-bottom: 80px;
   width: 100%;
 }
