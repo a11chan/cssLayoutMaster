@@ -1,0 +1,83 @@
+$bg-color:white;
+$bg-sub-color:black;
+$tr-default:all .3s ease-in-out;
+
+$media-min-width-0: 
+  "nv nv nv nv"
+  "nv nv nv nv"
+  "nv nv nv nv"
+  "nv nv nv nv"
+  "nv nv nv nv"
+  "nv nv nv nv"
+  "nv nv nv nv"
+  "nv nv nv nv"
+  "nv nv nv nv"
+  "nv nv nv nv"
+  "nv nv nv nv"
+  "nv nv nv nv"
+  "nv nv nv nv"
+  "nv nv nv nv"
+  "nv nv nv nv"
+  "nv nv nv nv"
+  "hm hm hm hm"
+  "hm hm hm hm"
+  "hm hm hm hm"
+  "hm hm hm hm"
+  "hm hm hm hm"
+  "hm hm hm hm"
+  "hm hm hm hm"
+  "sv sv sv sv"
+  "sv sv sv sv"
+  "sv sv sv sv"
+  "t1 t3 t3 t3"
+  "t2 t3 t3 t3"
+  "t2 t3 t3 t3"
+  "s1 s1 s2 s2"
+  "s1 s1 s2 s2"
+  "s1 s1 s3 s3"
+  "s4 s6 s5 s5"
+  "s4 s6 s5 s5"
+  "s7 s7 ft ft";
+
+  $media-min-width-660:
+  "nv nv nv nv hm hm hm hm"
+  "nv nv nv nv hm hm hm hm"
+  "nv nv nv nv hm hm hm hm"
+  "nv nv nv nv hm hm hm hm"
+  "nv nv nv nv hm hm hm hm"
+  "nv nv nv nv sv sv sv sv"
+  "nv nv nv nv sv sv sv sv"
+  "nv nv nv nv t2 t1 t1 t1"
+  "nv nv nv nv t2 t3 t3 t3"
+  "nv nv nv nv t2 t3 t3 t3"
+  "s4 s4 s5 s5 s2 s2 s1 s1"
+  "s4 s4 s5 s5 s2 s2 s1 s1"
+  "s3 s3 s6 s6 s7 ft ft ft"
+  "s3 s3 s6 s6 s7 ft ft ft";
+
+  $media-min-width-970:
+  "nv nv nv hm hm hm s1 s1 s1"
+  "nv nv nv hm hm hm s1 s1 s1"
+  "nv nv nv hm hm hm s1 s1 s1"
+  "nv nv nv hm hm hm s1 s1 s1"
+  "nv nv nv hm hm hm s1 s1 s1"
+  "nv nv nv sv sv sv s1 s1 s1"
+  "nv nv nv sv sv sv s1 s1 s1"
+  "nv nv nv t2 t1 t1 s2 s2 s2"
+  "nv nv nv t2 t3 t3 s2 s2 s2"
+  "nv nv nv t2 t3 t3 s2 s2 s2"
+  "s3 s3 s4 s4 s6 s6 s2 s2 s2"
+  "s3 s3 s5 s5 s6 s6 ft ft ft"
+  "s3 s3 s5 s5 s7 s7 ft ft ft";
+
+  $media-min-width-1280:
+  "nv nv nv hm hm hm s1 s1 s1 s2 s2 s2"
+  "nv nv nv hm hm hm s1 s1 s1 s2 s2 s2"
+  "nv nv nv hm hm hm s1 s1 s1 s2 s2 s2"
+  "nv nv nv hm hm hm s1 s1 s1 s2 s2 s2"
+  "nv nv nv hm hm hm s1 s1 s1 s3 s3 s4"
+  "nv nv nv hm hm hm s1 s1 s1 s3 s3 s5"
+  "nv nv nv hm hm hm s1 s1 s1 s6 s7 s7"
+  "nv nv nv hm hm hm s1 s1 s1 s6 s7 s7"
+  "nv nv nv sv sv sv t1 t2 ft ft ft ft"
+  "nv nv nv sv sv sv t1 t3 ft ft ft ft";
