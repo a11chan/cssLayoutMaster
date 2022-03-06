@@ -182,6 +182,9 @@ body {
             &:nth-child(3) {
               justify-content: flex-end;
             }
+            input, label {
+              cursor: pointer;
+            }
             input[type="radio"] {
               appearance: none;
               margin-right: 2px;

@@ -337,6 +337,10 @@ body .grid-aside header form ul li:nth-child(3) {
           justify-content: flex-end;
 }
 
+body .grid-aside header form ul li input, body .grid-aside header form ul li label {
+  cursor: pointer;
+}
+
 body .grid-aside header form ul li input[type="radio"] {
   -webkit-appearance: none;
      -moz-appearance: none;
