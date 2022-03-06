@@ -1,0 +1,17 @@
+$main-padding:15px;
+$main-color:#ff0400;
+$aside-border:2px solid black;
+$main-border:3px solid $main-color;
+$main-border--hover:3px solid white;
+$main-box-shadow:
+  3px 0 0 0 $main-color,
+  0 3px 0 0 $main-color,
+  3px 3px 0 0 $main-color,
+  3px 0 0 0 $main-color inset,
+  0 3px 0 0 $main-color inset;
+$main-box-shadow--hover:
+  3px 0 0 0 white,
+  0 3px 0 0 white,
+  3px 3px 0 0 white,
+  3px 0 0 0 white inset,
+  0 3px 0 0 white inset;

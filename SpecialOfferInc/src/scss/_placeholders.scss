@@ -1,0 +1,38 @@
+%main-heading-style {
+  font-size:30px;
+  font-weight: 500;
+  letter-spacing: -2px;
+}
+%sub-heading-style {
+  font-size:18px;
+  font-weight: 500;
+  letter-spacing: -2px;
+}
+%ltrVerticalBox {
+  display: flex;
+  align-items:center;
+  padding-top:$main-padding;
+  writing-mode: vertical-lr;
+  font-size:32px;
+  font-weight: 600;
+}
+%overflowHidden {
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
+}
+%flexCenter {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+%overflowY-style {
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display:none;
+  }
+}
+%overflowX-style {
+  white-space:nowrap;
+  overflow:hidden;
+}
