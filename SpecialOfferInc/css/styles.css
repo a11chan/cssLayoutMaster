@@ -42,7 +42,7 @@ body .grid-header .grid-header__top, body .grid-header .grid-header__bottom {
   text-overflow: ellipsis;
 }
 
-body main .main-item > h4, body main .main-item .main-details h4, body main .main-item .main-details h5, body main .main-item .main-details h5 a {
+body main .main-item > h4, body main .main-item .main-details h4, body main .main-item .main-details h5 a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,20 +99,25 @@ body main .item-wrapper {
 body main .main-item {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 45px 2.85fr 1fr;
-      grid-template-columns: 45px 2.85fr 1fr;
+  -ms-grid-columns: 45px 2.6fr 1fr;
+      grid-template-columns: 45px 2.6fr 1fr;
   height: 150px;
   color: #ff0400;
   background-color: #ff7400;
-  -webkit-box-shadow: 3px 0 0 0 #ff0400, 0 3px 0 0 #ff0400, 3px 3px 0 0 #ff0400, 3px 0 0 0 #ff0400 inset, 0 3px 0 0 #ff0400 inset;
-          box-shadow: 3px 0 0 0 #ff0400, 0 3px 0 0 #ff0400, 3px 3px 0 0 #ff0400, 3px 0 0 0 #ff0400 inset, 0 3px 0 0 #ff0400 inset;
+  border: 3px solid #ff0400;
+}
+
+body main .main-item:not(:last-child) {
+  border-bottom: none;
+}
+
+body main .main-item:hover + .main-item {
+  border-top-color: white;
 }
 
 body main .main-item:hover {
-  z-index: 3;
   color: white;
-  -webkit-box-shadow: 3px 0 0 0 white, 0 3px 0 0 white, 3px 3px 0 0 white, 3px 0 0 0 white inset, 0 3px 0 0 white inset;
-          box-shadow: 3px 0 0 0 white, 0 3px 0 0 white, 3px 3px 0 0 white, 3px 0 0 0 white inset, 0 3px 0 0 white inset;
+  border-color: white;
 }
 
 body main .main-item:hover .main-title {
@@ -151,7 +156,6 @@ body main .main-item .main-title {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 17px;
-  height: 100%;
   font-size: 100px;
   font-weight: 500;
   text-transform: uppercase;
@@ -161,26 +165,27 @@ body main .main-item .main-title {
 }
 
 body main .main-item .main-details {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
 }
 
 body main .main-item .main-details h4 {
-  height: 50%;
+  place-self: center;
+  height: 100%;
+  width: 100%;
   text-align: center;
   font-size: 20px;
   border-bottom: 3px solid #ff0400;
 }
 
 body main .main-item .main-details h5 {
+  place-self: center;
+  height: 100%;
+  width: 100%;
   padding: 15px;
   width: 100%;
-  height: 50%;
 }
 
 body main .main-item .main-details h5 a {
