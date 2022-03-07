@@ -55,7 +55,7 @@ body {
 
 @media screen and (min-width: 1280px) {
   body {
-    height: 120vh;
+    height: 100vh;
   }
 }
 
@@ -85,96 +85,96 @@ main {
   main {
     -ms-grid-columns: (minmax(calc(95px * .6), 1fr))[4];
         grid-template-columns: repeat(4, minmax(calc(95px * .6), 1fr));
-    -ms-grid-rows: (minmax(calc(70px * .6), 1fr))[35];
-        grid-template-rows: repeat(35, minmax(calc(70px * .6), 1fr));
-        grid-template-areas: "nv nv nv nv" "nv nv nv nv" "nv nv nv nv" "nv nv nv nv" "nv nv nv nv" "nv nv nv nv" "nv nv nv nv" "nv nv nv nv" "nv nv nv nv" "nv nv nv nv" "nv nv nv nv" "nv nv nv nv" "nv nv nv nv" "nv nv nv nv" "nv nv nv nv" "nv nv nv nv" "hm hm hm hm" "hm hm hm hm" "hm hm hm hm" "hm hm hm hm" "hm hm hm hm" "hm hm hm hm" "hm hm hm hm" "sv sv sv sv" "sv sv sv sv" "sv sv sv sv" "t1 t3 t3 t3" "t2 t3 t3 t3" "t2 t3 t3 t3" "s1 s1 s2 s2" "s1 s1 s2 s2" "s1 s1 s3 s3" "s4 s6 s5 s5" "s4 s6 s5 s5" "s7 s7 ft ft";
+    -ms-grid-rows: (minmax(calc(70px * .6), 1fr))[31];
+        grid-template-rows: repeat(31, minmax(calc(70px * .6), 1fr));
+        grid-template-areas: "nv nv nv nv" "nv nv nv nv" "nv nv nv nv" "nv nv nv nv" "nv nv nv nv" "nv nv nv nv" "nv nv nv nv" "nv nv nv nv" "nv nv nv nv" "nv nv nv nv" "nv nv nv nv" "nv nv nv nv" "hm hm hm hm" "hm hm hm hm" "hm hm hm hm" "hm hm hm hm" "hm hm hm hm" "hm hm hm hm" "hm hm hm hm" "sv sv sv sv" "sv sv sv sv" "sv sv sv sv" "t1 t3 t3 t3" "t2 t3 t3 t3" "t2 t3 t3 t3" "s1 s1 s2 s2" "s1 s1 s2 s2" "s1 s1 s3 s3" "s4 s6 s5 s5" "s4 s6 s5 s5" "s7 s7 ft ft";
   }
   main main nav {
     -ms-grid-row: 1;
-    -ms-grid-row-span: 16;
+    -ms-grid-row-span: 12;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
     grid-area: nv;
   }
   main main .home {
-    -ms-grid-row: 17;
+    -ms-grid-row: 13;
     -ms-grid-row-span: 7;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
     grid-area: hm;
   }
   main main .service {
-    -ms-grid-row: 24;
+    -ms-grid-row: 20;
     -ms-grid-row-span: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
     grid-area: sv;
   }
   main main .space1 {
-    -ms-grid-row: 30;
+    -ms-grid-row: 26;
     -ms-grid-row-span: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: s1;
   }
   main main .space-2 {
-    -ms-grid-row: 30;
+    -ms-grid-row: 26;
     -ms-grid-row-span: 2;
     -ms-grid-column: 3;
     -ms-grid-column-span: 2;
     grid-area: s2;
   }
   main main .space-3 {
-    -ms-grid-row: 32;
+    -ms-grid-row: 28;
     -ms-grid-column: 3;
     -ms-grid-column-span: 2;
     grid-area: s3;
   }
   main main .space-4 {
-    -ms-grid-row: 33;
+    -ms-grid-row: 29;
     -ms-grid-row-span: 2;
     -ms-grid-column: 1;
     grid-area: s4;
   }
   main main .space-5 {
-    -ms-grid-row: 33;
+    -ms-grid-row: 29;
     -ms-grid-row-span: 2;
     -ms-grid-column: 3;
     -ms-grid-column-span: 2;
     grid-area: s5;
   }
   main main .space-6 {
-    -ms-grid-row: 33;
+    -ms-grid-row: 29;
     -ms-grid-row-span: 2;
     -ms-grid-column: 2;
     grid-area: s6;
   }
   main main .space-7 {
-    -ms-grid-row: 35;
+    -ms-grid-row: 31;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: s7;
   }
   main main .team-1 {
-    -ms-grid-row: 27;
+    -ms-grid-row: 23;
     -ms-grid-column: 1;
     grid-area: t1;
   }
   main main .team-2 {
-    -ms-grid-row: 28;
+    -ms-grid-row: 24;
     -ms-grid-row-span: 2;
     -ms-grid-column: 1;
     grid-area: t2;
   }
   main main .team-3 {
-    -ms-grid-row: 27;
+    -ms-grid-row: 23;
     -ms-grid-row-span: 3;
     -ms-grid-column: 2;
     -ms-grid-column-span: 3;
     grid-area: t3;
   }
   main main footer {
-    -ms-grid-row: 35;
+    -ms-grid-row: 31;
     -ms-grid-column: 3;
     -ms-grid-column-span: 2;
     grid-area: ft;

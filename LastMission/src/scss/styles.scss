@@ -19,7 +19,7 @@ body {
     height:150vh;
   }
   @media screen and (min-width:1280px) {
-    height: 120vh;
+    height: 100vh;
   }
 }
 
@@ -78,7 +78,7 @@ main {
     }
 
     grid-template-columns: repeat(4,minmax(calc(95px * .6), 1fr));
-    grid-template-rows: repeat(35,minmax(calc(70px * .6),1fr));
+    grid-template-rows: repeat(31,minmax(calc(70px * .6),1fr));
     grid-template-areas: $media-min-width-0;
   }
 
