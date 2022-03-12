@@ -1,0 +1,114 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+}
+
+header nav {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  font-size: 32px;
+  text-transform: lowercase;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+}
+
+header nav ul:hover {
+  background-color: gainsboro;
+  color: black;
+}
+
+header nav ul:first-child li:first-child {
+  padding-right: 120px;
+}
+
+header nav ul:first-child li:first-child:hover {
+  color: white;
+}
+
+header nav ul:first-child li:not(:first-child) {
+  color: gainsboro;
+  padding-right: 55px;
+}
+
+header nav ul:first-child li:not(:first-child):hover {
+  color: white;
+}
+
+header nav ul:first-child:hover li {
+  color: black;
+}
+
+header nav ul:not(:first-child) li:first-child {
+  margin-right: 90px;
+}
+
+header nav ul li {
+  cursor: pointer;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 45vh;
+  margin-top: 50px;
+}
+
+main article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: minmax(0, 10fr) 0.8fr;
+      grid-template-rows: minmax(0, 10fr) 0.8fr;
+  width: 100%;
+  height: 100%;
+}
+
+main article img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+main article h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=styles.css.map */
