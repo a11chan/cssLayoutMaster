@@ -1,0 +1,29 @@
+%categoryTitle {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+%btn {
+  display:block;
+  margin-bottom: 50px;
+  margin-right:10px;
+  padding:7px 30px;
+  width:fit-content;
+  height:fit-content;
+  font-size:16px;
+  color:inherit;
+  font-weight: 600;
+  text-decoration: none;
+  border:$main-border;
+  border-radius:50px;
+  transition: all .3s ease-in-out;
+  &:hover {
+    background-color: black;
+    color:white;
+  }
+}
+
+%linkMarginBottom {
+  margin-bottom:36px;
+}
