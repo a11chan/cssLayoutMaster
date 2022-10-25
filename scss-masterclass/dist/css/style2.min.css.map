@@ -1,12 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,OAAO,CAAC,uGAAI,CAWZ,AGXA,MHWM,AGXE,CACN,OAAO,CAAC,YAAY,CACpB,WAAW,CAAE,OAAO,CACpB,aAAa,CAAE,GAAG,CAClB,SAAS,CAAC,IAAI,CACd,cAAc,CAAE,SAAS,CACzB,OAAO,CAAC,QAAQ,CAChB,gBAAgB,CAAE,OAAO,CACzB,KAAK,CAAC,KAAK,CACX,WAAW,CAAC,GAAG,CAChB,AHLD,AAAA,CAAC,AAAC,CEJA,KAAK,CAAC,IAAI,CFMR,eAAe,CAAE,IAAI,CAExB,AAED,AAAA,MAAM,AAAC,CAEL,MAAM,CAAE,IAAI,CACb",
-    "sources": [
-        "../../src/scss/style2.scss",
-        "../../src/scss/_variables.scss",
-        "../../src/scss/_mixins.scss",
-        "../../src/scss/_buttons.scss"
-    ],
-    "names": [],
-    "file": "style2.min.css"
-}
+{"version":3,"sources":["../../src/scss/style2.scss","../../src/scss/_buttons.scss","../../src/scss/_mixins.scss"],"names":[],"mappings":"AAAQ,yGAAA,CAAA,OCCN,oBAAA,CACA,mBAAA,CACA,iBAAA,CACA,cAAA,CACA,wBAAA,CACA,gBAAA,CACA,wBAAA,CACA,UAAA,CACA,eAAA,CDJF,EEJE,UAAA,CFME,oBAAA,CAIJ,OAEE,WAAA","file":"style2.min.css"}
