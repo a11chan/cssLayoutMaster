@@ -1,0 +1,64 @@
+@import "_reset";
+@import "_variables";
+@import "_elements";
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Serif", serif;
+  background-color: #f0efeb;
+  color:$black;
+  line-height: 1.5;
+  padding:30px 40px;
+}
+
+header {
+  font-size:46px;
+  letter-spacing: 1px;
+  margin-bottom: 170px;
+}
+
+.works {
+  margin-bottom:80px;
+  .works__header {
+    @extend %grid;
+    padding-bottom:10px;
+    span {
+      @extend %tinyText;
+    }
+  }
+  .works__list {
+    .works__work{
+      cursor:pointer;
+      font-size:20px;
+      border-top:1px solid $black;
+      padding:20px 0;
+      @extend %grid;
+      &:hover {
+        font-style: italic;
+      }
+    }
+  }
+}
+
+.cv, .about {
+  font-size:32px;
+  span{
+    @extend %tinyText;
+  }
+}
+.cv {
+  margin-bottom:80px;
+}
+.about {
+  padding-bottom: 80px;
+  a {
+    color:$red;
+    &:hover {
+      font-style: italic;
+    }
+  }
+}
