@@ -1,3 +1,68 @@
 @import "_reset";
 @import "_variables";
 
+main {
+  width: 100%;
+  padding: 10px;
+
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(304px, 1fr));
+  grid-auto-rows: minmax(320px, 420px);
+
+  .workResult {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr;
+    background-color: $bg-color;
+
+    .workResult__Thumbnail {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      overflow: hidden;
+      cursor: pointer;
+      &:hover img {
+        transform:scale(1.1);
+      }
+      & img {
+        width:100%;
+        object-fit: cover;
+        object-position: 50% top;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+
+    .workResult__workInfo{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      .workResult__workTitle {
+        grid-row: 1;
+        background-color: $main-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color:$font-color;
+        font-weight: bold;
+      }
+      .workResult__linkBox {
+        grid-row: 2;
+        
+        & a {
+          width:100%;
+          height:100%;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+          background-color: $sub-color;
+          color:$font-color;
+          font-size:.9em;
+        }
+      }
+    }
+  }
+}

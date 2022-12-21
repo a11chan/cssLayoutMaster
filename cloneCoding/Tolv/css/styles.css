@@ -51,7 +51,7 @@ header .logo span {
   grid-template-rows: calc(100vh - 60px);
 }
 .hero .hero__img {
-  background-image: url("https://source.unsplash.com/random");
+  background-image: url("https://source.unsplash.com/random/?furniture");
   background-position: center center;
   background-size: cover;
 }
@@ -126,6 +126,6 @@ header .logo span {
   height: 100%;
   background-size: cover;
   background-position: center;
-  background-image: url("https://source.unsplash.com/random/400x300");
+  background-image: url("https://source.unsplash.com/random/400x300/?furniture");
   transition: all 0.2s linear;
 }/*# sourceMappingURL=styles.css.map */

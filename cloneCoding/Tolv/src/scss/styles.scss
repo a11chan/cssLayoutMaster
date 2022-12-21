@@ -55,7 +55,7 @@ header {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: calc(100vh - 60px);
   .hero__img {
-    background-image: url("https://source.unsplash.com/random");
+    background-image: url("https://source.unsplash.com/random/?furniture");
     background-position:center center;
     background-size:cover;
   }
@@ -131,7 +131,7 @@ header {
       height:100%;
       background-size: cover;
       background-position: center;
-      background-image: url("https://source.unsplash.com/random/400x300");
+      background-image: url("https://source.unsplash.com/random/400x300/?furniture");
       transition: all .2s linear;
     }
   }
